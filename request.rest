@@ -1,0 +1,186 @@
+### Login
+POST http://localhost:8000/faskes/login
+Content-Type: application/json
+
+{
+    "userName": "kotakelektronik@gmail.com",
+    "password": "p5fuNGds"
+}
+
+### Puskesmas
+GET http://localhost:8000/faskes/puskesmas
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTcwMDIxMDkxMiwiZXhwIjoxNzAwMjExODEyfQ.tt84mDQEVHS_w-EcL6afBhnIxMXaxUDqc9sG_JGn1BY
+
+### Provinsi
+GET https://api-yankes.kemkes.go.id/faskes/provinsi
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4NjIxMTA3MiwiZXhwIjoxNjg2MjExOTcyfQ.e43k5J9SNNhNBWhyKoq_jw1xCZVpB3f_44onsmtjU0k
+
+### KabKota
+GET https://api-yankes.kemkes.go.id/faskes/kabkota?provinsiId=31
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4NjIxMjExNCwiZXhwIjoxNjg2MjEzMDE0fQ.1nf0R9nVHS-GYJU-e5dHw7clrDirBcyosusK7jMqrCE
+
+### Rumah Sakit
+GET http://localhost/faskes/rumahsakit?startModifiedAt=2023-11-23
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTcwMDYxNDkzMiwiZXhwIjoxNzAwNjE1ODMyfQ.E2UUgUBW5UDEATcgbwDAIYD1GHc9n2R8NoZEIJNXfis
+
+### Rumah Sakit Specified
+GET http://localhost/faskes/rumahsakit/3174063
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5MTMwOTQ4OSwiZXhwIjoxNjkxMzEwMzg5fQ.pcnSnitOHhtfS9d729cfpNLIT7zwFl9SOS_HCEWSrD4
+
+### Rumah Sakit Pelayanan
+GET http://localhost/faskes/rumahsakitpelayanan?rsId=3174063
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4ODM1NjQyNiwiZXhwIjoxNjg4MzU3MzI2fQ.1iI2ZI5ICyYgMmrEaDzbZbC9K4fZ03kJ4Xho07khpxg
+
+### Rumah Sakit Ketersediaan Tempat Tidur
+GET http://localhost/faskes/rumahsakitketersediaantempattidur?provinsiId=31&kabKotaId=3174
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4OTkxMjU1MywiZXhwIjoxNjg5OTEzNDUzfQ.JSO75mB3igF06Tt_gXuwyMzfHOgm6zUIjAp5JwNav7k
+
+### Praktek Mandiri
+GET http://localhost/faskes/praktekmandiri?provinsiId=31&kabKotaId=&nama=&page=1&limit=6
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTcwMDIwNTQ0NiwiZXhwIjoxNzAwMjA2MzQ2fQ.EXLQ6Kjp-cAsYof_Is5xJiXP8fz1fAvbk8nsY5xxE0c
+
+### Praktek Mandiri Nakes
+GET http://localhost/faskes/praktekmandirinakes
+
+
+### Show Praktek Mandiri
+GET http://localhost/faskes/praktekmandiri/11010100006
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTcwMjYyMjA4OSwiZXhwIjoxNzAyNjIyOTg5fQ.IYpHY2YSt-fQROy_EPyjGBFcR8OpAWbaVubCz0cscu0
+
+### Praktek Mandiri Kategori
+GET https://api-yankes.kemkes.go.id/faskes/praktekmandirikategori
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4NjM2NjMzNiwiZXhwIjoxNjg2MzY3MjM2fQ.7CPmDlHYK1c_4mZQxuLuwLmPM3Zb8P_5ee3slS05pUQ
+
+### Praktek Mandiri Review
+POST http://localhost:8000/faskes/praktekmandirireview
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4NTk0NTY5MCwiZXhwIjoxNjg1OTQ2NTkwfQ.2XJ5IYF4YHhm1ovihMlK4mU0l_N7hZUBUXQAE3PpaCI
+
+{
+    "doctor": {
+        "fasyankes_code": "36740100AAA",
+        "nik": "1234567890",
+        "str_code": "212118181383",
+        "health_worker_name": "dr. Ujang",
+        "specialization": "Dokter Hewan"
+    },
+    "info": {
+        "checkin-time": "2021-01-01T00:00:00Z",
+        "review-time": "2021-01-01T02:00:00Z",
+        "visit-date": "2021-01-02"
+    },
+    "result": {
+        "resultDescription": "Puas",
+        "resultPoint": 1
+    },
+    "userId": "1",
+    "reviews": [
+        {
+            "code": "question-01",
+            "aspect": "ketepatan Waktu",
+            "questionDescription": "Dokter buka praktik seperti jadwal yang ditentukan",
+            "answer": "Tidak",
+            "answerPoint": 1
+        },
+        {
+            "code": "question-02",
+            "aspect": "informasi yang diberikan dokter",
+            "questionDescription": "Dokter memberikan edukasi terkait penyakit yang diderita",
+            "answer": "Ya",
+            "answerPoint": 1 
+        },
+        {
+            "code": "question-03",
+            "aspect": "pelayanan yang diberikan dokter",
+            "questionDescription": "Dokter memberikan penjelasan dan meminta persetujuan saya dalam pelayanan kesehatan",
+            "answer": "Ya",
+            "answerPoint": 1 
+        },
+        {
+            "code": "question-04",
+            "aspect": "penilaian kebersihan TPMD/TPMDG",
+            "questionDescription": "Kebersihan ruang tunggu dan ruang periksa",
+            "answer": "Ya",
+            "answerPoint": 1
+        }
+    ]
+}
+
+### Klinik
+GET  http://localhost/faskes/klinik?provinsiId=31&kabKotaId=&jenis=&nama=&page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTcwMDIwNTQ0NiwiZXhwIjoxNzAwMjA2MzQ2fQ.EXLQ6Kjp-cAsYof_Is5xJiXP8fz1fAvbk8nsY5xxE0c
+
+### Show Klinik
+GET https://api-yankes.kemkes.go.id/faskes/klinik/12010300004
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4NjIzNjMzMywiZXhwIjoxNjg2MjM3MjMzfQ.xj-rjwBf4fcDKOA7V8H8lyMoizaH_u6OILUm0lh1mZ8
+
+### Klinik Pelayanan
+GET http://localhost/faskes/klinikpelayanan?klinikId=31740300103
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4NjIzNjMzMywiZXhwIjoxNjg2MjM3MjMzfQ.xj-rjwBf4fcDKOA7V8H8lyMoizaH_u6OILUm0lh1mZ8
+
+### LabKes
+GET http://localhost/faskes/labkes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTcwMDIwNTQ0NiwiZXhwIjoxNzAwMjA2MzQ2fQ.EXLQ6Kjp-cAsYof_Is5xJiXP8fz1fAvbk8nsY5xxE0c
+
+### Show LabKes
+GET http://localhost:5000/labkes/11040700001
+
+### UTD
+GET http://localhost/faskes/utd
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTcwMDIwNTQ0NiwiZXhwIjoxNzAwMjA2MzQ2fQ.EXLQ6Kjp-cAsYof_Is5xJiXP8fz1fAvbk8nsY5xxE0c
+
+### Show UTD
+GET http://localhost:5000/utd/11010600001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4MjM5ODQzMywiZXhwIjoxNjgyMzk5MzMzfQ.iGHZc2U5dl3_TyakT1Dy6RVcR1FjNuK2B8F3dVv92zg
+
+### Praktek Mandiri Nakes
+GET http://192.168.49.40:8000/faskes/praktekmandirinakes?praktekMandiriId=11020100001
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4Mjc1MTMxMSwiZXhwIjoxNjgyNzUyMjExfQ.sTmu0JAVsyERMQrBRlCfDguik-M92_zlT396ZxgOpko
+
+### Pengajuan
+GET http://localhost/faskes/rumahsakitpengajuansurveiakreditasi?page=4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc5NjEwNiwiZXhwIjoxNjkzNzk3MDA2fQ.5Ngap5CN7IpQUtP_hfqKoiV3c2lX95N-R2QW6T-TAPI
+
+### Survei
+GET http://localhost:8000/faskes/rumahsakitsurveiakreditasi?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc5NDQ3NiwiZXhwIjoxNjkzNzk1Mzc2fQ.rvs2rlSDuka4tNkzur9NKluk5KaSaLUce0ZZUCV5Ya4
+
+### Survei Detail
+GET http://localhost:8000/faskes/rumahsakitsurveidetailakreditasi?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc5NDQ3NiwiZXhwIjoxNjkzNzk1Mzc2fQ.rvs2rlSDuka4tNkzur9NKluk5KaSaLUce0ZZUCV5Ya4
+
+### Rekomendasi
+GET http://localhost:8000/faskes/rumahsakitrekomendasiakreditasi?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc5NDQ3NiwiZXhwIjoxNjkzNzk1Mzc2fQ.rvs2rlSDuka4tNkzur9NKluk5KaSaLUce0ZZUCV5Ya4
+
+### Sertifikasi
+GET http://localhost:8000/faskes/rumahsakitsertifikasiakreditasimanual?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc5NDQ3NiwiZXhwIjoxNjkzNzk1Mzc2fQ.rvs2rlSDuka4tNkzur9NKluk5KaSaLUce0ZZUCV5Ya4
+
+### Sertifikasi TTE
+GET http://localhost:8000/faskes/rumahsakitsertifikasiakreditasielektronik?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5Mzc5NDQ3NiwiZXhwIjoxNjkzNzk1Mzc2fQ.rvs2rlSDuka4tNkzur9NKluk5KaSaLUce0ZZUCV5Ya4
+
+### Post Satu Sehat ID
+POST http://localhost:8000/faskes/satusehatid
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY4NTk0NTY5MCwiZXhwIjoxNjg1OTQ2NTkwfQ.2XJ5IYF4YHhm1ovihMlK4mU0l_N7hZUBUXQAE3PpaCI
+
+{
+    "kodeBaru": "36740100AAA",
+    "secretKey": "1234567890",
+    "clientId": "212118181383",
+    "organizationId": "11"
+}
+
+### Sertifikasi Klinik
+GET http://localhost:8000/faskes/kliniksertifikasiakreditasi?page=175
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5NjU2NDY5OCwiZXhwIjoxNjk2NTY1NTk4fQ.5DlmfFMcnmFRfAYdZ0Eug54VXIbSC4ODPTZDp58r2bM
+
+### Sertifikasi Labkes
+GET http://localhost:8000/faskes/labkessertifikasiakreditasi?page=1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5NjU2NDY5OCwiZXhwIjoxNjk2NTY1NTk4fQ.5DlmfFMcnmFRfAYdZ0Eug54VXIbSC4ODPTZDp58r2bM
+
+### Sertifikasi utd
+GET http://localhost:8000/faskes/utdsertifikasiakreditasi?page=2
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcl9uYW1lIjoia290YWtlbGVrdHJvbmlrQGdtYWlsLmNvbSIsImlhdCI6MTY5NjU2NDY5OCwiZXhwIjoxNjk2NTY1NTk4fQ.5DlmfFMcnmFRfAYdZ0Eug54VXIbSC4ODPTZDp58r2bM
